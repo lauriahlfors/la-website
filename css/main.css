@@ -1,14 +1,125 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #3000ff;
+}
+
 :root {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    --text-primary: #3000ff;
+    --text-secondary: #ff00de;
+    --bg-primary: #3000ff;
 }
 
 body {
     color: black;
-    background-color: #4800ff;
+    background-color: #0f0f0f;
     margin: 0;
     padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
+
+/*navbar*/
+.navbar {
+    height: 5rem;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.navbar-nav {
+    list-style: none;
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    /*background-color: green;*/
+}
+
+.nav-item {
+    margin: 2vw;
+    
+    /*background-color: red;*/
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition-duration: 1s;
+    color: var(--text-primary);
+}
+
+.nav-link:hover {
+    transition-duration: 1s;
+    color: var(--text-secondary);
+}
+
+/*header*/
+header {
+    position: relative;
+	display: flex;
+    justify-content: center;
+}
+
+/*main*/
+main {
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: blue;*/
+}
+
+/*landing page*/
+.landing {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+}
+
+.landing-container1 { 
+    height: 50rem;
+    width: 25rem;
+    margin: 5rem 1rem;
+    background-color: blue;
+}
+
+.landing-container2 { 
+    height: 50rem;
+    width: 25rem;
+    margin: 5rem 1rem;
+    background-color: red;
+}
+
+.about {
+    width: 100vw;
+
+    background-color: #ffffff;
+}
+
+.about-skill-software-logo {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+}
+
+
+
+
+
 
 /*scrollbar*/
 body::-webkit-scrollbar {
@@ -24,26 +135,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #ffffff;
     border-radius: 10px;
-}
-
-/*navbar*/
-
-/*header*/
-header {
-    position: relative;
-	display: flex;
-	justify-content: center;
-}
-
-.artLayer_moon {
-    width: 20rem;
-    height: 20rem;
-    position: fixed;
-
-}
-
-/*main*/
-main {
-    margin-top: 5rem;
-    padding: 1rem;
 }
